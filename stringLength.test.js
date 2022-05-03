@@ -1,9 +1,9 @@
-import stringLength from './functions.js';
+const stringLength = require('./stringLength.js');
 
-const string = /Hello world!/;
+
 
 test('The parameter is not a string', () => {
-  expect(string).stringMatching(/Hello world!/);
+  expect(string).stringMatching(/^Alic/);
 });
 
 test('The string is empty.', () => {
@@ -13,3 +13,5 @@ test('The string is empty.', () => {
 test('The string is too long. (Max: 10 characters)', () => {
   expect(stringLength(string)).toBeGreaterThan(10);
 });
+
+

@@ -10,10 +10,23 @@ if (typeOf(string) !== 'string' ) {
     throw new Error ('The parameter is not a string')
 };
 
+test('The parameter is not a string', () => {
+  expect(string).stringMatching(/^Alic/);
+});
+___________________________
 if (stringLength(string)<1) {
     throw new Error ('The string is empty.')
 };
 
+test('The string is empty.', () => {
+  expect(stringLength(string)).toBeLessThan(1);
+});
+__________________________
+
 if (stringLength(string)>10) {
     throw new Error ('The string is too long. (Max: 10 characters)')
 };
+
+test('The string is too long. (Max: 10 characters)', () => {
+  expect(stringLength(string)).toBeGreaterThan(10);
+});
