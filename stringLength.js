@@ -1,2 +1,3 @@
 const stringLength = (string) => string.length;
-module.export stringLength(string);
+
+module.exports = stringLength;

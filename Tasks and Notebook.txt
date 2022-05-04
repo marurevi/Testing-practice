@@ -1,32 +1,16 @@
-/* Task 1
+Task 1
 Write a function stringLength(string) that takes any string as an argument and returns its characters count.
 Now write a test for this function.
 Next, expand your function to make it check if the string is at least 1 character long and not longer than 10 characters. Throw errors if those conditions are not met.
-Add tests for the new functionality.*/
+Add tests for the new functionality.
 
-export const stringLength = (string) => string.length;
+Task 2
+Write a function reverseString(string) function. It should take a string as an argument and return it reversed.
+Write at least one test for this function.
 
-if (typeOf(string) !== 'string' ) {
-    throw new Error ('The parameter is not a string')
-};
+Task 3
+In this task, you will need to write several tests for each tested function. You could write all of your tests directly at the top level, but it's better to group related tests so their output is more readable. Jest has the describe() method just for that. Read about it here and apply it in your tests for this task:
 
-test('The parameter is not a string', () => {
-  expect(string).stringMatching(/^Alic/);
-});
-___________________________
-if (stringLength(string)<1) {
-    throw new Error ('The string is empty.')
-};
-
-test('The string is empty.', () => {
-  expect(stringLength(string)).toBeLessThan(1);
-});
-__________________________
-
-if (stringLength(string)>10) {
-    throw new Error ('The string is too long. (Max: 10 characters)')
-};
-
-test('The string is too long. (Max: 10 characters)', () => {
-  expect(stringLength(string)).toBeGreaterThan(10);
-});
+Write a simple calculator class or object, which will have 4 methods: add, subtract, divide, and multiply.
+Write at least 3 tests for each of the calculator methods.
+Group tests for each method using describe() method.
